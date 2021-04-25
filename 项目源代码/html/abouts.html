@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>关于我</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* body 样式 */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* 标题 */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    
+}
+
+/* 标题字体加大 */
+.header h1 {
+    font-size: 40px;
+	color: black;
+}
+
+.headeer p{
+	color: black;
+}
+
+/* 导航 */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* 导航栏样式 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* 右侧链接*/
+.navbar a.right {
+    float: right;
+}
+
+/* 鼠标移动到链接的颜色 */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 列容器 */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* 创建两个列 */
+/* 边栏 */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* 主要的内容区域 */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* 测试图片 */
+.fakeimg {
+    
+    width: 100%;
+    padding: 0px;
+}
+
+/* 底部 */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>关于我</h1>
+  <p>一名未来的程序猿。</p>
+</div>
+
+<div class="navbar">
+  <a href="album.html">相册</a>
+  <a href="advice.html">课程总结</a>
+  <a href="money.html">打赏</a>
+  <a href="../index.html" class="right">返回首页</a>
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>自我介绍</h2>
+      <h5>我的照片:</h5>
+      <div class="fakeimg" style="height:216px;">
+		  <center><img src="../img/me.png" alt="me" width="400" height="224.7"></center>
+	  </div>
+      <p>贺巍，来自成都大学2018级软件工程1班，成都大学信息科学与工程学院社团联合会2019-2020届活动部部长。</p>
+      <h3>更多内容</h3>
+      <div class="fakeimg" style="height:225px;">
+		  <img src="../img/3.png" alt="me" width="400" height="224.7">
+	  </div><br>
+      <div class="fakeimg" style="height:225px;">
+		  <img src="../img/4.png" alt="me" width="400" height="224.7">
+	  </div><br>
+      <div class="fakeimg" style="height:225px;">
+		  <img src="../img/5.png" alt="me" width="400" height="224.7">
+	  </div>
+  </div>
+  <div class="main">
+      <h2>户外活动</h2>
+      <h5>周末户外素拓</h5>
+      <div class="fakeimg" style="height:600px;">
+		  <img src="../img/1.png" alt="1" width="800" height="600">
+	  </div>
+      <p>户外运动的意义</p>
+      <p>&emsp;&emsp;户外运动可以使你体验到与在城市中生活完全不同的感觉，感受大自然，感受团体合作精神，感受自我动手能力，磨练自己的意志，锻炼自己的体力，感受野外清新的空气，嗨可以体验到在野外各种环境，现在户外运动成为人们除了旅游之外最喜爱玩的运动，不需要太奢侈的装备，只要你有信心和激情，就可以背起背包，到自然中去，相信你会喜欢在自然中的感觉。</p>
+      <br>
+      <h2>五四晚会</h2>
+      <h5>受邀参加五四晚会</h5>
+      <div class="fakeimg" style="height:388px;">
+		  <img src="../img/2.png" alt="2">
+	  </div>
+      <p>五四青年节</p>
+      <p>&emsp;&emsp;五四青年节源于中国1919年反帝爱国的“五四运动”，五四爱国运动是一次彻底的反对帝国主义和封建主义的爱国运动，也是中国新民主主义革命的开始。1939年，陕甘宁边区西北青年救国联合会规定5月4日为中国青年节。
+青年节期间，中国各地都要举行丰富多彩的纪念活动，青年们还要集中进行各种社会志愿和社会实践活动，还有许多地方在青年节期间举行成人仪式。</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>版权©hw</h2>
+</div>
+
+</body>
+</html>

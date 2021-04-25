@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>帮助中心</title>
+		<style>
+			/* 导航 */
+			.navbar {
+				overflow: hidden;
+				background-color: #333;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			/* 导航栏样式 */
+			.navbar a {
+				float: left;
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 20px;
+				text-decoration: none;
+			}
+
+			/* 右侧链接*/
+			.navbar a.right {
+				float: right;
+			}
+
+			/* 鼠标移动到链接的颜色 */
+			.navbar a:hover {
+				background-color: #ddd;
+				color: black;
+			}
+
+			.ln {
+				float: left;
+
+			}
+
+			ul {
+				width: 180px;
+				margin: 0 auto;
+				background: #fff;
+				position: relative;
+				z-index: 0;
+				padding: 60px 20px 70px;
+
+			}
+
+			ul li {
+				height: 40px;
+				line-height: 40px;
+
+				border-bottom: 1px solid #F8F8F8;
+			}
+
+			ul li a {
+				color: #666;
+				display: block; //此元素将显示为块级元素，此元素前后会带有换行符。
+				text-decoration: none;
+			}
+
+			ul li a:hover {
+				color: #FF5F3E;
+				text-decoration: none;
+			}
+
+			ul li a.hover {
+				color: #FF5F3E;
+			}
+
+			#lanPos {
+				width: 225px;
+				height: 40px;
+				line-height: 40px;
+				background: #F8F8F8;
+				position: absolute;
+				left: -5px;
+				top: 0;
+				z-index: -1;
+				transition: top .2s;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="navbar" style="width: 1024px;">
+			<a href="../index.html">首页</a>
+			<a href="hero1.html">英雄大全</a>
+			<a href="hero2.html">英雄排行</a>
+			<a href="hero3.html">英雄对比</a>
+			<a href="hero4.html">英雄攻略</a>
+			<a href="money.html" class="right">打赏站主</a>
+		</div>
+
+		<div style="width: 1024px;margin: auto;">
+			<div class=" ln">
+				<ul>
+					<li><A href="tel.html">联系方式</A></li>
+					<li><A href="mz.html">免责声明</A></li>
+					<li><A href="jh.html">家长监护</A></li>
+					<li><A class="hover" href="help.html">帮助中心</A></li>
+					<div id="lanPos"></div>
+				</ul>
+			</div>
+			<div>
+				<h1>帮助中心：</h1>
+				<p>1、第一时间了解手游最新动态、了解热门游戏！<br />
+					2、获得经过安全检测最新新游热游!<br />
+					3、获取来自骨灰级玩家的经验指导!<br />
+					4、分享经验获得丰富的奖金、奖品!<br />
+					未来我们将打造一个媒体化的开放平台，为分享经验的玩家建立专栏、为游戏厂商建立档案库、为媒体提供内容合作，并将在手机端和PC端打造属于我们自己最个性的产品，希望你的参与，也希望各大厂商前来合作，相信有你更精彩！</p>
+			</div>
+		</div>
+	</body>
+</html>
